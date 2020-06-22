@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score"
+    android:background="@color/colorPrimary"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="PRODUCT QUIZ"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuis ini berisi pertanyaan tentang daftar produk yang ditampilkan sebelumnya. Terdiri dari 5 pertanyaan. Good Luck :)"
+        android:textColor="@android:color/white"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title"/>
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscore: 0"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/notes"/>
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highscore"
+        android:layout_centerHorizontal="true"
+        android:text="Start Quiz"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

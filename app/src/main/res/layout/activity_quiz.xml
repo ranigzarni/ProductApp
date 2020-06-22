@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/question_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1/10"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_count"
+        android:text="Question placed here | Question placed here |
+        Question placed here | Question placed here | Question placed here |
+        Question placed here |"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/option_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option_check"
+        android:text="Confirm"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_confirm_next"
+        android:text="Score: 0"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>
