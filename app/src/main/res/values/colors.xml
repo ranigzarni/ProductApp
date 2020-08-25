@@ -6,6 +6,8 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="bgwardah">#d9f1f2</color>
-    <color name="bgix">#d7d8da</color>
+    <color name="bgix">#878a90</color>
     <color name="textwardah">#4eb5be</color>
+    <color name="textemina">#f7899e</color>
+    <color name="bgemina">#fadbe4</color>
 </resources>
